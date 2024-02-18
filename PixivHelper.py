@@ -255,7 +255,7 @@ def make_filename(nameFormat: str,
         if len(idx) > 0:
             page_index = idx[0]
             page_number = str(int(page_index) + 1)
-            padding = len(str(imageInfo.imageCount)) or 1
+            padding = 2
             page_number = str(page_number)
             page_number = page_number.zfill(padding)
         if fileUrl.find('_big') > -1 or fileUrl.find('_m') <= -1:
